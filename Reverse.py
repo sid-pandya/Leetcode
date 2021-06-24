@@ -1,3 +1,4 @@
+#Reverse number 32 bit
 class Solution:
     def reverse(self, x: int) -> int:
         if x > 0:
@@ -12,4 +13,5 @@ class Solution:
             return 0  
         else:
             return rev
+        
     
