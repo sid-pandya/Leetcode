@@ -1,4 +1,4 @@
 # Leetcode
 
 Hello..!
-Here I tried to upload a python solution for leetcod problems.
+Here I tried to upload a python solution for leetcode problems.
