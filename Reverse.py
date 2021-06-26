@@ -1,4 +1,5 @@
 #Reverse number 32 bit
+
 class Solution:
     def reverse(self, x: int) -> int:
         if x > 0:
