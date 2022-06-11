@@ -1,4 +1,4 @@
-**Given a string s, return true if the s can be palindrome after deleting at most one character from it.**
+**LeetCode 680 -Given a string s, return true if the s can be palindrome after deleting at most one character from it.**
 
 #one way : 68ms , 14.5 MB
 class Solution:
@@ -22,16 +22,8 @@ class Solution:
         
         
 #second way : 168ms , 14.5 MB
-   class Solution:
-    def validPalindrome(self, s: str) -> bool:
-        def helper(s, left, right):
-            while left < right:
-                if s[left] != s[right]:
-                    return False
-                left += 1
-                right -= 1       
-            return True
-    
+class Solution:
+    def validPalindrome(self, s: str) -> bool: 
         left = 0
         right = len(s) - 1
         while( left < right):
@@ -39,6 +31,13 @@ class Solution:
                 return helper(s,left,right-1) or helper(s,left+1,right)
             left += 1
             right -= 1
+        return True
+    def helper(s, left, right):
+        while left < right:
+            if s[left] != s[right]:
+                return False
+            left += 1
+            right -= 1       
         return True
 
 # third way : 74ms , 14.6 MB
