@@ -5,6 +5,7 @@ class Solution:
 
 #Second Way : 79ms & 14.4 MB
 # Two pointer method
+#Time Complexity: O(n) , Space Complexity: O(1)
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         f = 0
