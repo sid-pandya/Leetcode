@@ -22,6 +22,7 @@ class Solution:
         
         
 #second way : 168ms , 14.5 MB
+#Time Complexity: O(N) , Space Complexity: O(1)
 class Solution:
     def validPalindrome(self, s: str) -> bool: 
         left = 0
