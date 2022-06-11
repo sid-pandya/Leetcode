@@ -1,6 +1,6 @@
 #Time:O(√n), Space: O(1)
 
-import Math
+import math
 
 #helper method
 def IsPrime(n):
