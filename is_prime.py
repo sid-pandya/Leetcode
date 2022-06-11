@@ -1,5 +1,6 @@
 #Time: O(√n)
 
+import math
 def IsPrime(n):
   if n < 2:
     return False
