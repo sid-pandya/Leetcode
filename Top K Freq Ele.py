@@ -1,4 +1,7 @@
-#LeetCode -347 : Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
+# LeetCode -347 : Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
+
+# Time Complexity: O(n log n) : for loop O(n) + .sort() O(log n)
+# Space Complexity: O(1)
 
 #183 ms , 18.7 MB
 class Solution:
