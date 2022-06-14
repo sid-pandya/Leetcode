@@ -17,4 +17,20 @@ class Solution:
             ret.append(freq[i][0])
             
         return ret
+    
+          
+
+#236 ms , 18.8 MB
+class Solution:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        freq = {}
+       
+        for element in nums:
+            if element not  in freq:
+                freq[element] = 1
+            else:
+                freq[element] += 1
+        freq = dict(sorted(freq.items(), key=lambda x: x[1], reverse=True))
+        result = list(freq.keys())[:k]
+        return result
       
