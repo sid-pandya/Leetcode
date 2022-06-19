@@ -1,6 +1,29 @@
 # LeetCode 128 - Longest Consecutive Sequence
 Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence
 
+#HashSet Approach :
+Time complexity: O(n). 
+Auxiliary space : O(n).
+
+```
+class Solution:
+    def longestConsecutive(self, nums: List[int]) -> int:
+        ans = 0 
+        count = 0
+        h_set = set(nums)
+        
+        for i in h_set:
+            if i - 1 not in h_set:
+                j = i
+                count = 1
+                
+                while j+1 in h_set:
+                    j += 1
+                    count += 1
+                
+                ans = max(ans,count)
+        return ans
+```
 
 #sorting array approach :
 Time complexity: O(nLogn). 
