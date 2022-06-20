@@ -7,6 +7,26 @@ The majority element is the element that appears more than ⌊n / 2⌋ times. Yo
 #Space Complexity: O(N)
 
 ```
+class Solution:
+    def majorityElement(self, nums):
+        d = {}
+        for i in range(len(nums)):
+            if nums[i] in d:
+                d[nums[i]] += 1
+            else:
+                d[nums[i]] = 1
+        count = 0
+        for key in d:
+            if d[key] > (len(nums)//2):
+                count = 1
+                return key
+        if(count == 0):
+            return -1
+```
+
+---------------OR----------------------
+
+```
 def majorityElement(self, nums: List[int]) -> int:
         d = {}
         for i in nums:
