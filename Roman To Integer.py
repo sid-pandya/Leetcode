@@ -1,7 +1,8 @@
 #LeetCode - 13 : Given a roman numeral, convert it to an integer.
 
 #using hashtable (Dictionary)
-
+Time complexity – O(1)
+Auxiliary Space – O(1)
 
 ```
 class Solution:
