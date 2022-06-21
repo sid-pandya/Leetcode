@@ -1,6 +1,8 @@
 #LeetCode - 13 : Given a roman numeral, convert it to an integer.
 
-#using .replace() 
+#using .replace()
+Time complexity – O(N)
+Auxiliary Space – O(1)
 
 ```
 class Solution:
