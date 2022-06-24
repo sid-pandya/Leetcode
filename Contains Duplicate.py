@@ -13,3 +13,12 @@ class Solution:
             h.add(i)
         return False
 ```
+
+# Method 3 -- Set solution for python
+# Time Complexity: O(N)
+```
+        h =  set(nums)
+        if len(nums) == len(h):
+            return False
+        return True
+```
