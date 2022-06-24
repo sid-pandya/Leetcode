@@ -22,3 +22,7 @@ class Solution:
             return False
         return True
 ```
+Or
+```
+    return len(nums) != len(set(nums))
+```
